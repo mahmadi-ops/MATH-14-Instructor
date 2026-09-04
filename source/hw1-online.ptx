@@ -537,27 +537,12 @@ with a double-headed arrow mark each spring's height.
       <p>
         Eliminate <m>t</m> to identify the curve the object travels on: it
         is a <var width="10"/> (type <c>line</c>, <c>parabola</c>, <c>circle</c>,
-        <c>ellipse</c>, or <c>hyperbola</c>)
-        centered at the origin, extending <var width="5"/> unit(s) to the
-        left and right of the center and <var width="5"/> unit(s) above and
-        below it.
+        <c>ellipse</c>, or <c>hyperbola</c>).
       </p>
       <p>
-        Since <m>y(t)</m> never changes sign, the object stays on the
-        <var width="8"/> half of that curve (type <c>upper</c> or
-        <c>lower</c>).
-      </p>
-      <p>
-        As <m>t \to -\infty</m> the object approaches the point
-        <m>(</m><var width="5"/>, <var width="5"/><m>)</m>;
-        at <m>t = 0</m> it is at
-        <m>(</m><var width="5"/>, <var width="5"/><m>)</m>;
-        and as <m>t \to \infty</m> it approaches
-        <m>(</m><var width="5"/>, <var width="5"/><m>)</m>.
-      </p>
-      <p>
-        So it travels <var width="18"/> along that curve (type
-        <c>clockwise</c> or <c>counterclockwise</c>).
+        Then graph the path and indicate the direction of motion. There is
+        no box for this part: include the graph in the solution you submit
+        to the grader.
       </p>
     </statement>
     <setup>
@@ -568,156 +553,6 @@ with a double-headed arrow mark each spring's height.
           </feedback>
         </condition>
         <condition string="ellipse">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-        <condition string=".*">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-      </var>
-      <var>
-        <condition number="3" tolerance="0.01">
-          <feedback>
-            <p>Correct.</p>
-          </feedback>
-        </condition>
-        <condition number="9" tolerance="0.01">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-        <condition string=".*">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-      </var>
-      <var>
-        <condition number="3" tolerance="0.01">
-          <feedback>
-            <p>Correct.</p>
-          </feedback>
-        </condition>
-        <condition number="9" tolerance="0.01">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-        <condition string=".*">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-      </var>
-      <var case="insensitive">
-        <condition string="upper">
-          <feedback>
-            <p>Correct.</p>
-          </feedback>
-        </condition>
-        <condition string="lower">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-        <condition string=".*">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-      </var>
-      <var>
-        <condition number="-3" tolerance="0.01">
-          <feedback>
-            <p>Correct.</p>
-          </feedback>
-        </condition>
-        <condition number="3" tolerance="0.01">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-        <condition string=".*">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-      </var>
-      <var>
-        <condition number="0" tolerance="0.01">
-          <feedback>
-            <p>Correct.</p>
-          </feedback>
-        </condition>
-        <condition string=".*">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-      </var>
-      <var>
-        <condition number="0" tolerance="0.01">
-          <feedback>
-            <p>Correct.</p>
-          </feedback>
-        </condition>
-        <condition string=".*">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-      </var>
-      <var>
-        <condition number="3" tolerance="0.01">
-          <feedback>
-            <p>Correct.</p>
-          </feedback>
-        </condition>
-        <condition string=".*">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-      </var>
-      <var>
-        <condition number="3" tolerance="0.01">
-          <feedback>
-            <p>Correct.</p>
-          </feedback>
-        </condition>
-        <condition number="-3" tolerance="0.01">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-        <condition string=".*">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-      </var>
-      <var>
-        <condition number="0" tolerance="0.01">
-          <feedback>
-            <p>Correct.</p>
-          </feedback>
-        </condition>
-        <condition string=".*">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-      </var>
-      <var case="insensitive">
-        <condition string="clockwise">
-          <feedback>
-            <p>Correct.</p>
-          </feedback>
-        </condition>
-        <condition string="counterclockwise">
           <feedback>
             <p>Incorrect.</p>
           </feedback>
