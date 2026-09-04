@@ -524,8 +524,8 @@ with a double-headed arrow mark each spring's height.
   <!-- =================================================================== -->
   <!-- Problems 38 and 41 and Example 7 of the textbook's "Using Time as   -->
   <!-- the Parameter" material.                                            -->
-  <exercise xml:id="ex-hw1o-semicircle-motion">
-    <title>Describing a Motion: Around a Circle</title>
+  <exercise xml:id="ex-hw1o-motion-i">
+    <title>Describing a Motion, I</title>
     <statement>
       <p>
         An object moves along a curve so that at time <m>t</m> it has
@@ -535,13 +535,16 @@ with a double-headed arrow mark each spring's height.
         Describe the motion.
       </p>
       <p>
-        Every point of the path satisfies <m>x^2 + y^2 =</m>
-        <var width="6"/>, so the object stays on a circle centered at
-        the origin.
+        Eliminate <m>t</m> to identify the curve the object travels on: it
+        is a <var width="10"/> (type <c>line</c>, <c>parabola</c>, <c>circle</c>,
+        <c>ellipse</c>, or <c>hyperbola</c>)
+        centered at the origin, extending <var width="5"/> unit(s) to the
+        left and right of the center and <var width="5"/> unit(s) above and
+        below it.
       </p>
       <p>
         Since <m>y(t)</m> never changes sign, the object stays on the
-        <var width="8"/> half of that circle (type <c>upper</c> or
+        <var width="8"/> half of that curve (type <c>upper</c> or
         <c>lower</c>).
       </p>
       <p>
@@ -553,18 +556,52 @@ with a double-headed arrow mark each spring's height.
         <m>(</m><var width="5"/>, <var width="5"/><m>)</m>.
       </p>
       <p>
-        So it travels <var width="18"/> around the circle (type
+        So it travels <var width="18"/> along that curve (type
         <c>clockwise</c> or <c>counterclockwise</c>).
       </p>
     </statement>
     <setup>
-      <var>
-        <condition number="9" tolerance="0.01">
+      <var case="insensitive">
+        <condition string="circle">
           <feedback>
             <p>Correct.</p>
           </feedback>
         </condition>
+        <condition string="ellipse">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+        <condition string=".*">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
         <condition number="3" tolerance="0.01">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition number="9" tolerance="0.01">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+        <condition string=".*">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition number="3" tolerance="0.01">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition number="9" tolerance="0.01">
           <feedback>
             <p>Incorrect.</p>
           </feedback>
@@ -719,7 +756,7 @@ with a double-headed arrow mark each spring's height.
       </p>
       <figure xml:id="fig-hw1o-semicircle">
         <caption>
-          The path of <xref ref="ex-hw1o-semicircle-motion"/>: the upper half
+          The path of <xref ref="ex-hw1o-motion-i"/>: the upper half
           of the circle <m>x^2+y^2=9</m>, traced clockwise.
         </caption>
         <image width="70%">
@@ -789,8 +826,8 @@ with a double-headed arrow mark each spring's height.
   </exercise>
 
   <!-- =================================================================== -->
-  <exercise xml:id="ex-hw1o-ellipse-motion">
-    <title>Describing a Motion: Around an Ellipse</title>
+  <exercise xml:id="ex-hw1o-motion-ii">
+    <title>Describing a Motion, II</title>
     <statement>
       <p>
         An object moves along a curve so that at time <m>t</m> it has
@@ -800,10 +837,12 @@ with a double-headed arrow mark each spring's height.
         Describe the motion.
       </p>
       <p>
-        Eliminating <m>t</m> shows that the path is an ellipse centered at
-        <m>(</m><var width="5"/>, <var width="5"/><m>)</m>, extending
-        <var width="5"/> unit(s) to the left and right of the center and
-        <var width="5"/> unit(s) above and below it.
+        Eliminate <m>t</m> to identify the curve the object travels on: it
+        is a <var width="10"/> (type <c>line</c>, <c>parabola</c>, <c>circle</c>,
+        <c>ellipse</c>, or <c>hyperbola</c>)
+        centered at <m>(</m><var width="5"/>, <var width="5"/><m>)</m>,
+        extending <var width="5"/> unit(s) to the left and right of the
+        center and <var width="5"/> unit(s) above and below it.
       </p>
       <p>
         At <m>t = 0</m> the object is at
@@ -812,13 +851,30 @@ with a double-headed arrow mark each spring's height.
         <m>(</m><var width="5"/>, <var width="5"/><m>)</m>.
       </p>
       <p>
-        It travels <var width="18"/> around the ellipse (type
+        It travels <var width="18"/> along that curve (type
         <c>clockwise</c> or <c>counterclockwise</c>), and as <m>t</m> runs
-        from <m>0</m> to <m>2\pi</m> it goes around the ellipse
+        from <m>0</m> to <m>2\pi</m> it goes around the curve
         <var width="4"/> time(s).
       </p>
     </statement>
     <setup>
+      <var case="insensitive">
+        <condition string="ellipse">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="circle">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+        <condition string=".*">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
       <var>
         <condition number="-2" tolerance="0.01">
           <feedback>
@@ -997,7 +1053,7 @@ with a double-headed arrow mark each spring's height.
       </p>
       <figure xml:id="fig-hw1o-ellipse-motion">
         <caption>
-          The path of <xref ref="ex-hw1o-ellipse-motion"/>: the ellipse
+          The path of <xref ref="ex-hw1o-motion-ii"/>: the ellipse
           <m>(x+2)^2 + \dfrac{(y-4)^2}{4} = 1</m>, traced once counterclockwise
           from its lowest point.
         </caption>
