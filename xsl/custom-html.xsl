@@ -45,16 +45,17 @@
   <!-- worked example in the text.  These templates are the core's own       -->
   <!-- "born visible" branch, restricted to that one chapter.  Which         -->
   <!-- solutions exist at all is decided by <version include="..."/> in      -->
-  <!-- publication/publication.ptx.  The match also covers the solutions of   -->
-  <!-- the parts (tasks) of the sample past exam.                             -->
-  <xsl:template match="exercise[ancestor::chapter[@xml:id = 'ch-problems']]/solution |
-                       task[ancestor::chapter[@xml:id = 'ch-problems']]/solution"
+  <!-- publication/publication.ptx.  The sample past exam (a worksheet) is    -->
+  <!-- left out: like the MATH 13 sample exam, its solutions stay behind the  -->
+  <!-- default knowls, one click under each part.                             -->
+  <xsl:template match="exercise[ancestor::chapter[@xml:id = 'ch-problems']]
+                                [not(ancestor::worksheet)]/solution"
                 mode="is-hidden">
     <xsl:text>false</xsl:text>
   </xsl:template>
 
-  <xsl:template match="exercise[ancestor::chapter[@xml:id = 'ch-problems']]/solution |
-                       task[ancestor::chapter[@xml:id = 'ch-problems']]/solution"
+  <xsl:template match="exercise[ancestor::chapter[@xml:id = 'ch-problems']]
+                                [not(ancestor::worksheet)]/solution"
                 mode="heading-birth">
     <xsl:apply-templates select="." mode="heading-non-singleton-number"/>
   </xsl:template>
