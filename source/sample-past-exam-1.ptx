@@ -11,9 +11,9 @@
   a task per part and a solution under each.  Included from main.ptx right after Review Problems #1, in
   this (completed, instructor) book only.  The xml:id keeps the
   "sec-exercises-" prefix so assets/unnumbered-chapter.css hides its number
-  like the rest of the chapter, and xsl/custom-html.xsl prints the
-  task-level solutions straight below their parts, as it does for the
-  exercise-level ones.
+  like the rest of the chapter, and xsl/custom-html.xsl leaves the
+  worksheet out of its born-visible rule, so the solutions sit behind
+  knowls as on the MATH 13 sample exam page.
 
   Two notes from typesetting:
   - Question 3: the handwritten antiderivative had the factor (minus 5/2)
