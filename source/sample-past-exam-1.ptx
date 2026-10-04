@@ -97,13 +97,14 @@
         <p>
           Solving <m>s = 2\sqrt{2}\, t</m> for <m>t</m> gives
           <m>t = \dfrac{s}{2\sqrt{2}}</m>, hence
-          <me>
-            \mathbf{r}(t(s)) = \left\langle
-              2\cos\!\left(\frac{s}{2\sqrt{2}}\right),\,
-              -2\cos\!\left(\frac{s}{2\sqrt{2}}\right),\,
-              2\sqrt{2}\sin\!\left(\frac{s}{2\sqrt{2}}\right)
-            \right\rangle .
-          </me>
+          <md>
+            <mrow>\mathbf{r}(t(s)) = \Bigl\langle\,
+              2\cos\!\Bigl(\tfrac{s}{2\sqrt{2}}\Bigr),\;
+              -2\cos\!\Bigl(\tfrac{s}{2\sqrt{2}}\Bigr),</mrow>
+            <mrow>\qquad\qquad
+              2\sqrt{2}\,\sin\!\Bigl(\tfrac{s}{2\sqrt{2}}\Bigr)
+              \Bigr\rangle .</mrow>
+          </md>
         </p>
       </solution>
     </task>
@@ -131,13 +132,14 @@
         <m>\lVert \mathbf{v}(t) \rVert = \sqrt{1 + 4t^2}</m>. Therefore
         <md>
           <mrow>M \amp = \int_C \rho(x,y)\, ds
-            = \frac{1}{8} \int_{t=\sqrt{2}}^{t=\sqrt{6}} 8t\sqrt{1 + 4t^2}\, dt</mrow>
-          <mrow>\amp = \left(\frac{1}{8}\right)\left(\frac{2}{3}\right)
-            \left(1 + 4t^2\right)^{3/2} \Bigg|_{t=\sqrt{2}}^{t=\sqrt{6}}</mrow>
+            = \int_{\sqrt{2}}^{\sqrt{6}} t\sqrt{1 + 4t^2}\, dt</mrow>
+          <mrow>\amp = \frac{1}{8} \int_{\sqrt{2}}^{\sqrt{6}} 8t\sqrt{1 + 4t^2}\, dt</mrow>
+          <mrow>\amp = \frac{1}{8}\cdot\frac{2}{3}
+            \left(1 + 4t^2\right)^{3/2} \Bigg|_{\sqrt{2}}^{\sqrt{6}}</mrow>
           <mrow>\amp = \frac{1}{12}\left(5^3 - 3^3\right)
-            = \frac{1}{12}(98),</mrow>
+            = \frac{98}{12},</mrow>
         </md>
-        so the mass is <m>M = \dfrac{49}{6}</m> grams.
+        so the mass is <m>M = \dfrac{98}{12} = \dfrac{49}{6}</m> grams.
       </p>
     </solution>
   </exercise>
@@ -159,19 +161,19 @@
         <m>\mathbf{F} = \langle 5y, -\sin(y) \rangle</m>, which along
         <m>C</m> is
         <m>\mathbf{F} = \langle 5\sin t, -\sin(\sin t) \rangle</m>, and
-        <me>
-          \mathbf{F} \cdot \mathbf{v}
-          = -5\sin^2 t - \cos t \, \sin(\sin t)
-          = -\frac{5}{2}\bigl(1 - \cos(2t)\bigr) - \cos t \, \sin(\sin t).
-        </me>
+        <md>
+          <mrow>\mathbf{F} \cdot \mathbf{v}
+            \amp = -5\sin^2 t - \cos t \, \sin(\sin t)</mrow>
+          <mrow>\amp = -\frac{5}{2}\bigl(1 - \cos(2t)\bigr) - \cos t \, \sin(\sin t).</mrow>
+        </md>
         Hence
         <md>
-          <mrow>\int_C 5y\, dx - \sin(y)\, dy
-            \amp = \int_{t=0}^{t=2\pi} \left[ -\frac{5}{2}\bigl(1 - \cos(2t)\bigr)
-              - \cos t \, \sin(\sin t) \right] dt</mrow>
-          <mrow>\amp = \left[ -\frac{5}{2}\left(t - \frac{1}{2}\sin(2t)\right)
-              + \cos(\sin t) \right]_0^{2\pi}</mrow>
-          <mrow>\amp = \left(-\frac{5}{2}\right)(2\pi) = -5\pi .</mrow>
+          <mrow>\int_C 5y\, dx \amp - \sin(y)\, dy</mrow>
+          <mrow>\amp = \int_{0}^{2\pi} \Bigl[ -\tfrac{5}{2}\bigl(1 - \cos(2t)\bigr)
+              - \cos t \, \sin(\sin t) \Bigr] dt</mrow>
+          <mrow>\amp = \Bigl[ -\tfrac{5}{2}\bigl(t - \tfrac{1}{2}\sin(2t)\bigr)
+              + \cos(\sin t) \Bigr]_0^{2\pi}</mrow>
+          <mrow>\amp = -\frac{5}{2}\,(2\pi) = -5\pi .</mrow>
         </md>
       </p>
     </solution>
@@ -196,10 +198,11 @@
         <p>
           Let <m>x = t</m>. Then <m>y = 5t^2</m> and
           <m>z = 3t + 5t^2</m>:
-          <me>
-            x(t) = t, \qquad y(t) = 5t^2, \qquad z(t) = 3t + 5t^2,
-            \qquad t \in \mathbb{R}.
-          </me>
+          <md>
+            <mrow>x(t) \amp = t,</mrow>
+            <mrow>y(t) \amp = 5t^2,</mrow>
+            <mrow>z(t) \amp = 3t + 5t^2, \qquad t \in \mathbb{R}.</mrow>
+          </md>
         </p>
       </solution>
     </task>
@@ -214,10 +217,11 @@
         <p>
           The cylinder gives <m>x = 3\cos t</m>, <m>y = 3\sin t</m>, and
           then <m>z = 2x + y = 6\cos t + 3\sin t</m>:
-          <me>
-            x(t) = 3\cos t, \qquad y(t) = 3\sin t, \qquad
-            z(t) = 6\cos t + 3\sin t, \qquad 0 \le t \le 2\pi.
-          </me>
+          <md>
+            <mrow>x(t) \amp = 3\cos t,</mrow>
+            <mrow>y(t) \amp = 3\sin t,</mrow>
+            <mrow>z(t) \amp = 6\cos t + 3\sin t, \qquad 0 \le t \le 2\pi.</mrow>
+          </md>
         </p>
       </solution>
     </task>
@@ -253,15 +257,15 @@
           <m>u = a+b-t</m>, <m>du = -dt</m>,
           <md>
             <mrow>\int_{-C} f\, ds
-              \amp = \int_{t=a}^{t=b} f\bigl(x(a+b-t), y(a+b-t)\bigr)\,
+              \amp = \int_{a}^{b} f\bigl(\mathbf{r}(a+b-t)\bigr)\,
                 \lVert \mathbf{v}(a+b-t) \rVert\, dt</mrow>
-            <mrow>\amp = \int_{u=b}^{u=a} f\bigl(x(u), y(u)\bigr)\,
+            <mrow>\amp = \int_{u=b}^{u=a} f\bigl(\mathbf{r}(u)\bigr)\,
                 \lVert \mathbf{v}(u) \rVert\, (-du)</mrow>
-            <mrow>\amp = -\int_{u=b}^{u=a} f\bigl(x(u), y(u)\bigr)\,
-                \lVert \mathbf{v}(u) \rVert\, du
-              = \int_{u=a}^{u=b} f\bigl(x(u), y(u)\bigr)\,
+            <mrow>\amp = -\int_{u=b}^{u=a} f\bigl(\mathbf{r}(u)\bigr)\,
                 \lVert \mathbf{v}(u) \rVert\, du</mrow>
-            <mrow>\amp = \int_C f\, ds .</mrow>
+            <mrow>\amp = \int_{u=a}^{u=b} f\bigl(\mathbf{r}(u)\bigr)\,
+                \lVert \mathbf{v}(u) \rVert\, du
+              = \int_C f\, ds .</mrow>
           </md>
           The line integral of a scalar function does not change sign when
           the direction is reversed.
