@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Sample Past Exam 1, with solutions.
+
+  Modeled on the MATH 13 instructor book's sample-past-exam-1.ptx: one
+  <exercise> per exam question, titled by its point value, with <task>s for
+  the parts and a <solution> under each, and the exam's formula sheet as an
+  <assemblage> at the end.  Included from main.ptx right after Review
+  Problems #1, in this (completed, instructor) book only.
+
+  QUESTIONS PENDING.  The exam questions and their worked solutions are to
+  be transcribed from the instructor's past exam; nothing here is to be
+  made up.  Until they are in, this file is not included from main.ptx.
+-->
+<worksheet xml:id="worksheet-sample-past-exam-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Sample Past Exam 1</title>
+
+<introduction>
+<p>
+A sample past exam, with worked solutions. Try the exam under exam
+conditions before you look at the solutions: no aids of your own (formula
+sheets, notes, phones, tablets, smart watches or similar), work written in
+a neat and organized format, and every step fully justified. The topics it
+covers, with links to the notes:
+</p>
+
+<p>
+<ul>
+<li><p><xref ref="sec-parametrization" text="title"/></p></li>
+<li><p><xref ref="sec-arc-length" text="title"/></p></li>
+<li><p><xref ref="sec-line-integrals" text="title"/></p></li>
+<li><p><xref ref="sec-vector-fields" text="title"/></p></li>
+</ul>
+</p>
+</introduction>
+
+<!-- ===================== Question 1 ===================== -->
+<!-- (pending transcription) -->
+
+<!-- ===================== Formula sheet ===================== -->
+<!-- (pending transcription) -->
+
+</worksheet>
