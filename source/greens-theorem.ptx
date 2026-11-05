@@ -143,18 +143,30 @@ nearly constant along each side:
 </p>
 
 <md>
-<mrow>\text{Top:} \amp\quad
-\mathbf{F}(x, y+\Delta y) \cdot \mathbf{j}\, \Delta x
-= N(x, y+\Delta y)\, \Delta x</mrow>
-<mrow>\text{Bottom:} \amp\quad
-\mathbf{F}(x, y) \cdot (-\mathbf{j})\, \Delta x
-= -N(x, y)\, \Delta x</mrow>
-<mrow>\text{Right:} \amp\quad
-\mathbf{F}(x+\Delta x, y) \cdot \mathbf{i}\, \Delta y
-= M(x+\Delta x, y)\, \Delta y</mrow>
-<mrow>\text{Left:} \amp\quad
-\mathbf{F}(x, y) \cdot (-\mathbf{i})\, \Delta y
-= -M(x, y)\, \Delta y.</mrow>
+<mrow>
+\text{Top:} \amp\quad \mathbf{F}(x, y+\Delta y) \cdot \mathbf{j}\, \Delta x
+</mrow>
+<mrow>
+\amp\qquad = N(x, y+\Delta y)\, \Delta x
+</mrow>
+<mrow>
+\text{Bottom:} \amp\quad \mathbf{F}(x, y) \cdot (-\mathbf{j})\, \Delta x
+</mrow>
+<mrow>
+\amp\qquad = -N(x, y)\, \Delta x
+</mrow>
+<mrow>
+\text{Right:} \amp\quad \mathbf{F}(x+\Delta x, y) \cdot \mathbf{i}\, \Delta y
+</mrow>
+<mrow>
+\amp\qquad = M(x+\Delta x, y)\, \Delta y
+</mrow>
+<mrow>
+\text{Left:} \amp\quad \mathbf{F}(x, y) \cdot (-\mathbf{i})\, \Delta y
+</mrow>
+<mrow>
+\amp\qquad = -M(x, y)\, \Delta y.
+</mrow>
 </md>
 
 <p>
@@ -172,15 +184,20 @@ field has a constant value along each side of the rectangle. The
 <term>flux density</term> can be calculated as follows:
 </p>
 
-<men xml:id="eq-flux-density">
-\text{Flux density}
-= \frac{\text{net flux through the rectangle}}
-{\text{area of the rectangle}}
-= \frac{\left( \frac{\partial M}{\partial x}
-+ \frac{\partial N}{\partial y} \right) \Delta x \Delta y}
-{\Delta x \Delta y}
-= \frac{\partial M}{\partial x} + \frac{\partial N}{\partial y}.
-</men>
+<md>
+<mrow>
+\amp \text{Flux density}
+</mrow>
+<mrow>
+\amp = \frac{\text{net flux through the rectangle}}{\text{area of the rectangle}}
+</mrow>
+<mrow>
+\amp = \frac{\left( \frac{\partial M}{\partial x} + \frac{\partial N}{\partial y} \right) \Delta x \Delta y}{\Delta x \Delta y}
+</mrow>
+<mrow xml:id="eq-flux-density" number="yes">
+\amp = \frac{\partial M}{\partial x} + \frac{\partial N}{\partial y}.
+</mrow>
+</md>
 
 <p>
 Note that, in the limit that <m>\Delta x</m> and <m>\Delta y</m>
@@ -256,13 +273,17 @@ physically.
 <em>Part A.</em> Using <xref ref="eq-div-def"/>,
 </p>
 
-<me>
-\nabla \cdot \mathbf{F}
-= \left( \frac{\partial}{\partial x}\,\mathbf{i}
-+ \frac{\partial}{\partial y}\,\mathbf{j} \right)
-\cdot \left( 2x\,\mathbf{i} + 2y\,\mathbf{j} \right)
-= 2 + 2 = 4 \gt 0.
-</me>
+<md>
+<mrow>
+\amp \nabla \cdot \mathbf{F}
+</mrow>
+<mrow>
+\amp \quad = \left( \frac{\partial}{\partial x}\,\mathbf{i} + \frac{\partial}{\partial y}\,\mathbf{j} \right) \cdot \left( 2x\,\mathbf{i} + 2y\,\mathbf{j} \right)
+</mrow>
+<mrow>
+\amp \quad = 2 + 2 = 4 \gt 0.
+</mrow>
+</md>
 
 <p>
 Note that for every point on the <m>xy</m>-plane we have found that
@@ -276,12 +297,17 @@ expanding, since there is a positive flux density at every point
 <em>Part B.</em> Again by <xref ref="eq-div-def"/>,
 </p>
 
-<me>
-\nabla \cdot \mathbf{F}
-= \frac{\partial}{\partial x} \left( \frac{-y}{x^2+y^2} \right)
-+ \frac{\partial}{\partial y} \left( \frac{x}{x^2+y^2} \right)
-= \frac{2xy}{(x^2+y^2)^2} - \frac{2xy}{(x^2+y^2)^2} = 0.
-</me>
+<md>
+<mrow>
+\amp \nabla \cdot \mathbf{F}
+</mrow>
+<mrow>
+\amp \quad = \frac{\partial}{\partial x} \left( \frac{-y}{x^2+y^2} \right) + \frac{\partial}{\partial y} \left( \frac{x}{x^2+y^2} \right)
+</mrow>
+<mrow>
+\amp \quad = \frac{2xy}{(x^2+y^2)^2} - \frac{2xy}{(x^2+y^2)^2} = 0.
+</mrow>
+</md>
 
 <p>
 Note that for every point on the <m>xy</m>-plane we have found that
@@ -376,11 +402,14 @@ perpendicular to the tangent vector <m>\mathbf{v}</m>, so
 The vector
 <m>\left\langle \frac{dy}{dt},\ -\frac{dx}{dt} \right\rangle</m> has
 this property, because
-<me>
-\left\langle \frac{dy}{dt},\ -\frac{dx}{dt} \right\rangle \cdot
-\left\langle \frac{dx}{dt},\ \frac{dy}{dt} \right\rangle
-= \frac{dy}{dt}\,\frac{dx}{dt} - \frac{dx}{dt}\,\frac{dy}{dt} = 0.
-</me>
+<md>
+<mrow>
+\amp \left\langle \frac{dy}{dt},\ -\frac{dx}{dt} \right\rangle \cdot \left\langle \frac{dx}{dt},\ \frac{dy}{dt} \right\rangle
+</mrow>
+<mrow>
+\amp \quad = \frac{dy}{dt}\,\frac{dx}{dt} - \frac{dx}{dt}\,\frac{dy}{dt} = 0.
+</mrow>
+</md>
 It is <m>\mathbf{v}</m> turned a quarter turn clockwise. Of the two
 directions perpendicular to <m>\mathbf{v}</m>, this is the one that
 points out of the region: as <m>C</m> is traversed counterclockwise, the
@@ -427,26 +456,36 @@ counterclockwise.
 Parametrize the circle as in <xref ref="eq-unit-circle-param"/>:
 <me>
 \mathbf{r}(t) = (\cos t)\,\mathbf{i} + (\sin t)\,\mathbf{j},
-\qquad 0 \le t \le 2\pi,
+\quad 0 \le t \le 2\pi,
 </me>
 which traverses it counterclockwise. Then
 <m>\frac{dx}{dt} = -\sin t</m> and <m>\frac{dy}{dt} = \cos t</m>, so
-<me>
-\mathbf{v} = \left\langle -\sin t,\ \cos t \right\rangle, \qquad
-\left\lVert\mathbf{v}\right\rVert = \sqrt{\sin^2 t + \cos^2 t} = 1.
-</me>
+<md>
+<mrow>
+\mathbf{v} \amp = \left\langle -\sin t,\ \cos t \right\rangle,
+</mrow>
+<mrow>
+\left\lVert\mathbf{v}\right\rVert \amp = \sqrt{\sin^2 t + \cos^2 t} = 1.
+</mrow>
+</md>
 </p>
 
 <p>
 By <xref ref="eq-outward-unit-normal"/> and
 <xref ref="eq-unit-tangent"/>,
 <md>
-<mrow>\mathbf{n} \amp= \frac{1}{1}
-\left\langle \cos t,\ -(-\sin t) \right\rangle
-= \left\langle \cos t,\ \sin t \right\rangle,</mrow>
-<mrow>\mathbf{T} \amp= \frac{1}{1}
-\left\langle -\sin t,\ \cos t \right\rangle
-= \left\langle -\sin t,\ \cos t \right\rangle.</mrow>
+<mrow>
+\mathbf{n} \amp= \frac{1}{1} \left\langle \cos t,\ -(-\sin t) \right\rangle
+</mrow>
+<mrow>
+\amp= \left\langle \cos t,\ \sin t \right\rangle,
+</mrow>
+<mrow>
+\mathbf{T} \amp= \frac{1}{1} \left\langle -\sin t,\ \cos t \right\rangle
+</mrow>
+<mrow>
+\amp= \left\langle -\sin t,\ \cos t \right\rangle.
+</mrow>
 </md>
 </p>
 
@@ -571,13 +610,17 @@ from. For <m>\mathbf{F} = M\,\mathbf{i} + N\,\mathbf{j}</m>, the line
 element <m>ds = \left\lVert\mathbf{v}\right\rVert\,dt</m> of
 <xref ref="eq-line-element-2d"/> cancels the length in
 <xref ref="eq-outward-unit-normal"/>:
-<me>
-\mathbf{F}\cdot\mathbf{n}\,ds
-= \frac{1}{\left\lVert\mathbf{v}\right\rVert}
-\left( M\,\frac{dy}{dt} - N\,\frac{dx}{dt} \right)
-\left\lVert\mathbf{v}\right\rVert\,dt
-= M\,dy - N\,dx.
-</me>
+<md>
+<mrow>
+\amp \mathbf{F}\cdot\mathbf{n}\,ds
+</mrow>
+<mrow>
+\amp \quad = \frac{1}{\left\lVert\mathbf{v}\right\rVert} \left( M\,\frac{dy}{dt} - N\,\frac{dx}{dt} \right) \left\lVert\mathbf{v}\right\rVert\,dt
+</mrow>
+<mrow>
+\amp \quad = M\,dy - N\,dx.
+</mrow>
+</md>
 </p>
 
 </subsubsection>
@@ -611,13 +654,14 @@ in an open region containing <m>R</m>. Then the outward flux of
 by <m>C</m>:
 </p>
 
-<men xml:id="eq-green-normal">
-\underbrace{\oint_C \mathbf{F} \cdot \mathbf{n}\, ds
-= \oint_C M\, dy - N\, dx}_{\text{outward flux through the boundary}}
-= \underbrace{\iint_R \left( \frac{\partial M}{\partial x}
-+ \frac{\partial N}{\partial y} \right) dx\, dy}_{\text{double integral
-of divergence over } R}.
-</men>
+<md>
+<mrow>
+\amp \underbrace{\oint_C \mathbf{F} \cdot \mathbf{n}\, ds}_{\text{outward flux}} = \oint_C M\, dy - N\, dx
+</mrow>
+<mrow xml:id="eq-green-normal" number="yes">
+\amp \quad = \underbrace{\iint_R \left( \frac{\partial M}{\partial x} + \frac{\partial N}{\partial y} \right) dx\, dy}_{\substack{\text{integral of} \\ \operatorname{div}\mathbf{F} \text{ over } R}}.
+</mrow>
+</md>
 </statement>
 </theorem>
 
@@ -627,8 +671,9 @@ of divergence over } R}.
 <p>
 Assume that the vector field
 <m>\mathbf{F}(x,y) = (x - y)\,\mathbf{i} + x\,\mathbf{j}</m> and the
-closed curve <m>C</m> is the unit circle centered at the origin.
-Convince yourself of the normal form of Green's theorem,
+closed curve <m>C</m> is the unit circle centered at the origin, drawn
+in <xref ref="fig-green-circle-normal"/>. Convince yourself of the normal
+form of Green's theorem,
 <xref ref="eq-green-normal"/>, by applying it to this example.
 </p>
 </statement>
@@ -639,10 +684,14 @@ Convince yourself of the normal form of Green's theorem,
 We begin by noticing that the unit circle can be parametrized as
 </p>
 
-<me>
-C: \quad \mathbf{r}(t) = (\cos t)\,\mathbf{i} + (\sin t)\,\mathbf{j},
-\qquad 0 \le t \le 2\pi.
-</me>
+<md>
+<mrow>
+\amp C: \quad \mathbf{r}(t) = (\cos t)\,\mathbf{i} + (\sin t)\,\mathbf{j},
+</mrow>
+<mrow>
+\amp \qquad 0 \le t \le 2\pi.
+</mrow>
+</md>
 
 <p>
 After substituting the parametrized equations <m>x(t) = \cos t</m> and
@@ -652,8 +701,18 @@ and thus
 </p>
 
 <md>
-<mrow>M = \cos t - \sin t, \amp\qquad dx = d(\cos t) = -\sin t\, dt,</mrow>
-<mrow>N = \cos t, \amp\qquad dy = d(\sin t) = \cos t\, dt,</mrow>
+<mrow>
+M \amp = \cos t - \sin t,
+</mrow>
+<mrow>
+N \amp = \cos t,
+</mrow>
+<mrow>
+dx \amp = d(\cos t) = -\sin t\, dt,
+</mrow>
+<mrow>
+dy \amp = d(\sin t) = \cos t\, dt,
+</mrow>
 </md>
 
 <p>
@@ -670,10 +729,18 @@ For the line integral in <xref ref="eq-green-normal"/> we have
 </p>
 
 <md>
-<mrow>\oint_C M\, dy - N\, dx
-\amp= \int_0^{2\pi} (\cos t - \sin t)(\cos t\, dt)
-- (\cos t)(-\sin t\, dt)</mrow>
-<mrow>\amp= \int_0^{2\pi} \cos^2 t\, dt = \pi,</mrow>
+<mrow>
+\amp \oint_C M\, dy - N\, dx
+</mrow>
+<mrow>
+\amp \quad = \int_0^{2\pi} (\cos t - \sin t)(\cos t\, dt)
+</mrow>
+<mrow>
+\amp \qquad {} - (\cos t)(-\sin t\, dt)
+</mrow>
+<mrow>
+\amp \quad = \int_0^{2\pi} \cos^2 t\, dt = \pi,
+</mrow>
 </md>
 
 <p>
@@ -686,18 +753,75 @@ which is the same integral we get from the outward unit normal of
 = \cos^2 t\, dt</m>. The double integral gives the same value:
 </p>
 
-<me>
-\iint_R \left( \frac{\partial M}{\partial x}
-+ \frac{\partial N}{\partial y} \right) dx\, dy
-= \iint_R (1 + 0)\, dx\, dy
-= \text{area inside the unit circle} = \pi.
-</me>
+<md>
+<mrow>
+\amp \iint_R \left( \frac{\partial M}{\partial x} + \frac{\partial N}{\partial y} \right) dx\, dy
+</mrow>
+<mrow>
+\amp \quad = \iint_R (1 + 0)\, dx\, dy
+</mrow>
+<mrow>
+\amp \quad = \text{area inside the unit circle} = \pi.
+</mrow>
+</md>
 
 <p>
 So the outward flux of <m>\mathbf{F}</m> across the unit circle is
 <m>\pi</m>, computed either way.
 </p>
 </solution>
+
+<figure xml:id="fig-green-circle-normal">
+<caption>
+The vector field <m>\mathbf{F}(x,y) = (x-y)\,\mathbf{i} +
+x\,\mathbf{j}</m> and the unit circle <m>C</m>, with the outward unit
+normal <m>\mathbf{n}</m> at two of its points. At every point of <m>C</m> the field has a component along
+<m>\mathbf{n}</m> that is positive or zero, so its outward flux across
+<m>C</m> is positive.
+</caption>
+<image width="55%">
+<shortdescription>
+A swirling field with the unit circle and two outward unit normal vectors.
+</shortdescription>
+<prefigure xmlns="https://prefigure.org" label="prefigure-green-circle-normal">
+<diagram dimensions="(300,300)" margins="10">
+<definition>field(x,y) = (x - y, x)</definition>
+<definition>circ(t) = (cos(t), sin(t))</definition>
+<coordinates bbox="(-2.3,-2.3,2.3,2.3)">
+<axes at="gn-axes" xlabel="x" ylabel="y" decorations="no" arrows="1"/>
+<vector-field at="gn-field" function="field"
+              spacings="((-2,0.8,2),(-2,0.8,2))" stroke="#2b6cb0"/>
+<parametric-curve at="gn-circle" function="circ" domain="(0,2*pi)"
+                  closed="yes" stroke="#00b0c0" thickness="3"/>
+<line at="gn-n1" p1="(0.9,0.436)" p2="(1.53,0.741)" arrows="1"
+      stroke="#009E73" thickness="3"/>
+<line at="gn-n2" p1="(-0.9,-0.436)" p2="(-1.53,-0.741)" arrows="1"
+      stroke="#009E73" thickness="3"/>
+<label at="gn-n1-label" clear-background="yes" background-margin="4" anchor="(1.58,0.76)" alignment="ne"
+       color="#009E73">
+<m>\mathbf{n}</m>
+</label>
+<label at="gn-n2-label" clear-background="yes" background-margin="4" anchor="(-1.58,-0.76)" alignment="sw"
+       color="#009E73">
+<m>\mathbf{n}</m>
+</label>
+<label at="gn-C-label" clear-background="yes" background-margin="4" anchor="(0.62,-0.95)" alignment="se"
+       color="#00b0c0">
+<m>C</m>
+</label>
+</coordinates>
+<annotations>
+<annotation ref="figure" text="The vector field x minus y comma x drawn as blue arrows swirling counterclockwise, with the unit circle C drawn in teal. Two green outward unit normal vectors n start on the circle and point straight away from the center.">
+  <annotation ref="gn-field" text="The vector field x minus y comma x, which swirls counterclockwise around the plane."/>
+  <annotation ref="gn-circle" text="The unit circle C, traversed counterclockwise."/>
+  <annotation ref="gn-n1" text="An outward unit normal vector n on the circle, pointing away from the center."/>
+  <annotation ref="gn-n2" text="The outward unit normal at the opposite point of the circle."/>
+</annotation>
+</annotations>
+</diagram>
+</prefigure>
+</image>
+</figure>
 
 </subsubsection>
 
@@ -831,18 +955,30 @@ left, and right:
 </p>
 
 <md>
-<mrow>\text{Top:} \amp\quad
-\mathbf{F}(x, y+\Delta y) \cdot (-\mathbf{i})\, \Delta x
-= -M(x, y+\Delta y)\, \Delta x</mrow>
-<mrow>\text{Bottom:} \amp\quad
-\mathbf{F}(x, y) \cdot \mathbf{i}\, \Delta x
-= M(x, y)\, \Delta x</mrow>
-<mrow>\text{Right:} \amp\quad
-\mathbf{F}(x+\Delta x, y) \cdot \mathbf{j}\, \Delta y
-= N(x+\Delta x, y)\, \Delta y</mrow>
-<mrow>\text{Left:} \amp\quad
-\mathbf{F}(x, y) \cdot (-\mathbf{j})\, \Delta y
-= -N(x, y)\, \Delta y.</mrow>
+<mrow>
+\text{Top:} \amp\quad \mathbf{F}(x, y+\Delta y) \cdot (-\mathbf{i})\, \Delta x
+</mrow>
+<mrow>
+\amp\qquad = -M(x, y+\Delta y)\, \Delta x
+</mrow>
+<mrow>
+\text{Bottom:} \amp\quad \mathbf{F}(x, y) \cdot \mathbf{i}\, \Delta x
+</mrow>
+<mrow>
+\amp\qquad = M(x, y)\, \Delta x
+</mrow>
+<mrow>
+\text{Right:} \amp\quad \mathbf{F}(x+\Delta x, y) \cdot \mathbf{j}\, \Delta y
+</mrow>
+<mrow>
+\amp\qquad = N(x+\Delta x, y)\, \Delta y
+</mrow>
+<mrow>
+\text{Left:} \amp\quad \mathbf{F}(x, y) \cdot (-\mathbf{j})\, \Delta y
+</mrow>
+<mrow>
+\amp\qquad = -N(x, y)\, \Delta y.
+</mrow>
 </md>
 
 <p>
@@ -850,14 +986,24 @@ Then we sum up the flow across the parallel edges:
 </p>
 
 <md>
-<mrow>\text{Top and bottom:} \amp\quad
--\big( M(x, y+\Delta y) - M(x,y) \big) \Delta x
-\approx -\left( \frac{\partial M}{\partial y}\, \Delta y \right)
-\Delta x</mrow>
-<mrow>\text{Right and left:} \amp\quad
-\big( N(x+\Delta x, y) - N(x,y) \big) \Delta y
-\approx \left( \frac{\partial N}{\partial x}\, \Delta x \right)
-\Delta y.</mrow>
+<mrow>
+\amp \text{Top and bottom:}
+</mrow>
+<mrow>
+\amp \quad -\big( M(x, y+\Delta y) - M(x,y) \big) \Delta x
+</mrow>
+<mrow>
+\amp \qquad \approx -\left( \frac{\partial M}{\partial y}\, \Delta y \right) \Delta x
+</mrow>
+<mrow>
+\amp \text{Right and left:}
+</mrow>
+<mrow>
+\amp \quad \big( N(x+\Delta x, y) - N(x,y) \big) \Delta y
+</mrow>
+<mrow>
+\amp \qquad \approx \left( \frac{\partial N}{\partial x}\, \Delta x \right) \Delta y.
+</mrow>
 </md>
 
 <p>
@@ -865,10 +1011,14 @@ Finally, after summing the flow rates above and taking the limit as
 <m>\Delta x, \Delta y \to 0</m>, for the circulation density we get
 </p>
 
-<me>
-\frac{\text{circulation around rectangle}}{\text{rectangle area}}
-\approx \frac{\partial N}{\partial x} - \frac{\partial M}{\partial y}.
-</me>
+<md>
+<mrow>
+\amp \frac{\text{circulation around rectangle}}{\text{rectangle area}}
+</mrow>
+<mrow>
+\amp \quad \approx \frac{\partial N}{\partial x} - \frac{\partial M}{\partial y}.
+</mrow>
+</md>
 
 <p>
 This quantity is denoted by
@@ -1081,13 +1231,14 @@ integral of <m>(\operatorname{curl} \mathbf{F}) \cdot \mathbf{k}</m>
 over <m>R</m>:
 </p>
 
-<men xml:id="eq-green-tangential">
-\underbrace{\oint_C \mathbf{F} \cdot \mathbf{T}\, ds
-= \oint_C M\, dx + N\, dy}_{\text{counterclockwise circulation}}
-= \underbrace{\iint_R \left( \frac{\partial N}{\partial x}
-- \frac{\partial M}{\partial y} \right) dx\, dy}_{\text{double integral
-of curl} \,\cdot\, \mathbf{k} \text{ over } R}.
-</men>
+<md>
+<mrow>
+\amp \underbrace{\oint_C \mathbf{F} \cdot \mathbf{T}\, ds}_{\text{circulation}} = \oint_C M\, dx + N\, dy
+</mrow>
+<mrow xml:id="eq-green-tangential" number="yes">
+\amp \quad = \underbrace{\iint_R \left( \frac{\partial N}{\partial x} - \frac{\partial M}{\partial y} \right) dx\, dy}_{\substack{\text{integral of} \\ \operatorname{curl}\mathbf{F}\cdot\mathbf{k} \text{ over } R}}.
+</mrow>
+</md>
 </statement>
 
 <proof xml:id="proof-green-tangential">
@@ -1118,9 +1269,14 @@ Suppose first that <m>R</m> is a region of the kind studied in
 <xref ref="sec-general-regions-case1"/>,
 </p>
 
-<me>
-R = \left\{(x,y) : a \le x \le b,\ f_2(x) \le y \le f_1(x)\right\} ,
-</me>
+<md>
+<mrow>
+R = \bigl\{ (x,y) : \amp\ a \le x \le b,
+</mrow>
+<mrow>
+\amp\ f_2(x) \le y \le f_1(x) \bigr\} ,
+</mrow>
+</md>
 
 <p>
 so that <m>C</m> is made of the bottom curve <m>y = f_2(x)</m> travelled
@@ -1133,13 +1289,19 @@ nothing to <m>\oint_C M\,dx</m>. What is left is
 
 <md>
 <mrow>
-\oint_C M\,dx
+\amp \oint_C M\,dx
+</mrow>
+<mrow>
 \amp = \int_a^b M\bigl(x,f_2(x)\bigr)\,dx
-+ \int_b^a M\bigl(x,f_1(x)\bigr)\,dx
+</mrow>
+<mrow>
+\amp \quad {} + \int_b^a M\bigl(x,f_1(x)\bigr)\,dx
 </mrow>
 <mrow>
 \amp = -\int_a^b \Bigl[M\bigl(x,f_1(x)\bigr)
-- M\bigl(x,f_2(x)\bigr)\Bigr] dx ,
+</mrow>
+<mrow>
+\amp \qquad {} - M\bigl(x,f_2(x)\bigr)\Bigr] dx ,
 </mrow>
 </md>
 
@@ -1151,13 +1313,13 @@ Fundamental Theorem of Calculus to the inner integral,
 
 <md>
 <mrow>
-\iint_R \frac{\partial M}{\partial y}\,dA
-\amp = \int_a^b\left[\int_{f_2(x)}^{f_1(x)}
-\frac{\partial M}{\partial y}\,dy\right] dx
+\amp \iint_R \frac{\partial M}{\partial y}\,dA
 </mrow>
 <mrow>
-\amp = \int_a^b \Bigl[M\bigl(x,f_1(x)\bigr)
-- M\bigl(x,f_2(x)\bigr)\Bigr] dx .
+\amp = \int_a^b\left[\int_{f_2(x)}^{f_1(x)} \frac{\partial M}{\partial y}\,dy\right] dx
+</mrow>
+<mrow>
+\amp = \int_a^b \Bigl[M\bigl(x,f_1(x)\bigr) - M\bigl(x,f_2(x)\bigr)\Bigr] dx .
 </mrow>
 </md>
 
@@ -1315,22 +1477,35 @@ The tangential form of Green's theorem,
 </p>
 
 <md>
-<mrow>\oint_C M\, dx + N\, dy
-\amp= \int_0^{2\pi} (\cos t - \sin t)(-\sin t\, dt)
-+ (\cos t)(\cos t\, dt)</mrow>
-<mrow>\amp= \int_0^{2\pi} (-\sin t \cos t + 1)\, dt = 2\pi,</mrow>
+<mrow>
+\amp \oint_C M\, dx + N\, dy
+</mrow>
+<mrow>
+\amp \quad = \int_0^{2\pi} (\cos t - \sin t)(-\sin t\, dt)
+</mrow>
+<mrow>
+\amp \qquad {} + (\cos t)(\cos t\, dt)
+</mrow>
+<mrow>
+\amp \quad = \int_0^{2\pi} (-\sin t \cos t + 1)\, dt = 2\pi,
+</mrow>
 </md>
 
 <p>
 and
 </p>
 
-<me>
-\iint_R \left( \frac{\partial N}{\partial x}
-- \frac{\partial M}{\partial y} \right) dx\, dy
-= \iint_R \big( 1 - (-1) \big)\, dx\, dy
-= 2 \iint_R dx\, dy = 2\pi.
-</me>
+<md>
+<mrow>
+\amp \iint_R \left( \frac{\partial N}{\partial x} - \frac{\partial M}{\partial y} \right) dx\, dy
+</mrow>
+<mrow>
+\amp \quad = \iint_R \big( 1 - (-1) \big)\, dx\, dy
+</mrow>
+<mrow>
+\amp \quad = 2 \iint_R dx\, dy = 2\pi.
+</mrow>
+</md>
 
 <p>
 The field and the curve are shown in <xref ref="fig-green-circle"/>;
@@ -1418,30 +1593,41 @@ In this example we have
 </p>
 
 <me>
-M(x,y) = \frac{1}{x+y}, \qquad N(x,y) = \frac{-1}{x+y},
+M(x,y) = \frac{1}{x+y}, \quad N(x,y) = \frac{-1}{x+y},
 </me>
 
 <p>
 and thus
 </p>
 
-<me>
-\frac{\partial N}{\partial x} - \frac{\partial M}{\partial y}
-= \frac{1}{(x+y)^2} - \frac{-1}{(x+y)^2}
-= \frac{2}{(x+y)^2}.
-</me>
+<md>
+<mrow>
+\amp \frac{\partial N}{\partial x} - \frac{\partial M}{\partial y}
+</mrow>
+<mrow>
+\amp \quad = \frac{1}{(x+y)^2} - \frac{-1}{(x+y)^2}
+</mrow>
+<mrow>
+\amp \quad = \frac{2}{(x+y)^2}.
+</mrow>
+</md>
 
 <p>
 Then we can use the tangential form of Green's theorem,
 <xref ref="eq-green-tangential"/>, to evaluate the line integral:
 </p>
 
-<me>
-\oint_C M\, dx + N\, dy
-= \iint_R \left( \frac{\partial N}{\partial x}
-- \frac{\partial M}{\partial y} \right) dx\, dy
-= \iint_R \frac{2}{(x+y)^2}\, dx\, dy.
-</me>
+<md>
+<mrow>
+\amp \oint_C M\, dx + N\, dy
+</mrow>
+<mrow>
+\amp \quad = \iint_R \left( \frac{\partial N}{\partial x} - \frac{\partial M}{\partial y} \right) dx\, dy
+</mrow>
+<mrow>
+\amp \quad = \iint_R \frac{2}{(x+y)^2}\, dx\, dy.
+</mrow>
+</md>
 
 <p>
 The region <m>R</m> is the square bounded by the four lines
@@ -1475,11 +1661,18 @@ Therefore
 </p>
 
 <md>
-<mrow>\iint_R \frac{2}{(x+y)^2}\, dx\, dy
-\amp= \int_{-1}^{1} \int_1^3 \frac{2}{u^2} \cdot \frac{1}{2}\,
-du\, dv
-= \int_{-1}^{1} \left[ -\frac{1}{u} \right]_1^3 dv</mrow>
-<mrow>\amp= \int_{-1}^{1} \frac{2}{3}\, dv = \frac{4}{3}.</mrow>
+<mrow>
+\amp \iint_R \frac{2}{(x+y)^2}\, dx\, dy
+</mrow>
+<mrow>
+\amp \quad = \int_{-1}^{1} \int_1^3 \frac{2}{u^2} \cdot \frac{1}{2}\, du\, dv
+</mrow>
+<mrow>
+\amp \quad = \int_{-1}^{1} \left[ -\frac{1}{u} \right]_1^3 dv
+</mrow>
+<mrow>
+\amp \quad = \int_{-1}^{1} \frac{2}{3}\, dv = \frac{4}{3}.
+</mrow>
 </md>
 
 <p>
@@ -1591,12 +1784,17 @@ partial derivatives. Then <m>\mathbf{F}</m> is conservative if and only
 if
 </p>
 
-<men xml:id="eq-component-test-3d">
-\frac{\partial P}{\partial y} = \frac{\partial N}{\partial z}, \qquad
-\frac{\partial M}{\partial z} = \frac{\partial P}{\partial x},
-\qquad \text{and} \qquad
-\frac{\partial N}{\partial x} = \frac{\partial M}{\partial y}.
-</men>
+<md>
+<mrow>
+\frac{\partial P}{\partial y} \amp = \frac{\partial N}{\partial z},
+</mrow>
+<mrow>
+\frac{\partial M}{\partial z} \amp = \frac{\partial P}{\partial x}, \quad \text{and}
+</mrow>
+<mrow xml:id="eq-component-test-3d" number="yes">
+\frac{\partial N}{\partial x} \amp = \frac{\partial M}{\partial y}.
+</mrow>
+</md>
 </assemblage>
 
 <p>
@@ -1605,21 +1803,26 @@ equivalent to
 <m>\nabla \times \mathbf{F} = \mathbf{0}</m>, since
 </p>
 
-<men xml:id="eq-curl-cross-product">
-\nabla \times \mathbf{F} =
+<md>
+<mrow>
+\nabla \times \mathbf{F} \amp =
 \begin{vmatrix}
 \mathbf{i} \amp \mathbf{j} \amp \mathbf{k} \\
 \dfrac{\partial}{\partial x} \amp \dfrac{\partial}{\partial y} \amp
 \dfrac{\partial}{\partial z} \\
 M \amp N \amp P
 \end{vmatrix}
-= \left( \frac{\partial P}{\partial y} - \frac{\partial N}{\partial z}
-\right) \mathbf{i}
-+ \left( \frac{\partial M}{\partial z} - \frac{\partial P}{\partial x}
-\right) \mathbf{j}
-+ \left( \frac{\partial N}{\partial x} - \frac{\partial M}{\partial y}
-\right) \mathbf{k}.
-</men>
+</mrow>
+<mrow>
+\amp = \left( \frac{\partial P}{\partial y} - \frac{\partial N}{\partial z} \right) \mathbf{i}
+</mrow>
+<mrow>
+\amp \quad {} + \left( \frac{\partial M}{\partial z} - \frac{\partial P}{\partial x} \right) \mathbf{j}
+</mrow>
+<mrow xml:id="eq-curl-cross-product" number="yes">
+\amp \quad {} + \left( \frac{\partial N}{\partial x} - \frac{\partial M}{\partial y} \right) \mathbf{k}.
+</mrow>
+</md>
 
 <p>
 So to check whether a vector field is conservative or not, we can check
@@ -1664,30 +1867,40 @@ Using Green's theorem, confirm your answer to part B.
 <em>Part A.</em> The vector field is
 </p>
 
-<me>
-\mathbf{F}(x,y) = M(x,y)\,\mathbf{i} + N(x,y)\,\mathbf{j}
-= 4x^3 y\,\mathbf{i} + x^4\,\mathbf{j}.
-</me>
+<md>
+<mrow>
+\mathbf{F}(x,y) \amp = M(x,y)\,\mathbf{i} + N(x,y)\,\mathbf{j}
+</mrow>
+<mrow>
+\amp = 4x^3 y\,\mathbf{i} + x^4\,\mathbf{j}.
+</mrow>
+</md>
 
 <p>
 <em>Part B.</em> Treating <m>\mathbf{F}</m> as a field in space with
 <m>P = 0</m> in <xref ref="eq-curl-cross-product"/>,
 </p>
 
-<me>
-\nabla \times \mathbf{F} =
+<md>
+<mrow>
+\nabla \times \mathbf{F} \amp =
 \begin{vmatrix}
 \mathbf{i} \amp \mathbf{j} \amp \mathbf{k} \\
 \dfrac{\partial}{\partial x} \amp \dfrac{\partial}{\partial y} \amp
 \dfrac{\partial}{\partial z} \\
 M \amp N \amp 0
 \end{vmatrix}
-= \left( \frac{\partial N}{\partial x}
-- \frac{\partial M}{\partial y} \right) \mathbf{k}
-= \left( \frac{\partial}{\partial x}(x^4)
-- \frac{\partial}{\partial y}(4x^3 y) \right) \mathbf{k}
-= \left( 4x^3 - 4x^3 \right)\mathbf{k} = \mathbf{0},
-</me>
+</mrow>
+<mrow>
+\amp = \left( \frac{\partial N}{\partial x} - \frac{\partial M}{\partial y} \right) \mathbf{k}
+</mrow>
+<mrow>
+\amp = \left( \frac{\partial}{\partial x}(x^4) - \frac{\partial}{\partial y}(4x^3 y) \right) \mathbf{k}
+</mrow>
+<mrow>
+\amp = \left( 4x^3 - 4x^3 \right)\mathbf{k} = \mathbf{0},
+</mrow>
+</md>
 
 <p>
 and hence the vector field is conservative.
@@ -1700,11 +1913,18 @@ and hence the vector field is conservative.
 </p>
 
 <md>
-<mrow>\oint_C 4x^3 y\, dx + x^4\, dy
-\amp= \iint_D \left( \frac{\partial N}{\partial x}
-- \frac{\partial M}{\partial y} \right) dx\, dy</mrow>
-<mrow>\amp= \iint_D \left( \frac{\partial}{\partial x}(x^4)
-- \frac{\partial}{\partial y}(4x^3 y) \right) dx\, dy = 0.</mrow>
+<mrow>
+\amp \oint_C 4x^3 y\, dx + x^4\, dy
+</mrow>
+<mrow>
+\amp \quad = \iint_D \left( \frac{\partial N}{\partial x} - \frac{\partial M}{\partial y} \right) dx\, dy
+</mrow>
+<mrow>
+\amp \quad = \iint_D \left( \frac{\partial}{\partial x}(x^4) - \frac{\partial}{\partial y}(4x^3 y) \right) dx\, dy
+</mrow>
+<mrow>
+\amp \quad = 0.
+</mrow>
 </md>
 
 <p>
@@ -1885,12 +2105,17 @@ If <m>\mathbf{F} = \langle -y,\ 0 \rangle</m>, that is <m>M = -y</m> and
 <m>\frac{\partial N}{\partial x} - \frac{\partial M}{\partial y}
 = 0 - (-1) = 1</m>, and the tangential form of Green's theorem,
 <xref ref="eq-green-tangential"/>, gives
-<me>
-\oint_C \mathbf{F} \cdot \mathbf{T}\, ds
-= \iint_E \left( \frac{\partial N}{\partial x}
-- \frac{\partial M}{\partial y} \right) dA
-= \iint_E 1\, dA = \text{area of } E.
-</me>
+<md>
+<mrow>
+\amp \oint_C \mathbf{F} \cdot \mathbf{T}\, ds
+</mrow>
+<mrow>
+\amp \quad = \iint_E \left( \frac{\partial N}{\partial x} - \frac{\partial M}{\partial y} \right) dA
+</mrow>
+<mrow>
+\amp \quad = \iint_E 1\, dA = \text{area of } E.
+</mrow>
+</md>
 </p>
 <p>
 Parametrize <m>C</m> counterclockwise as
@@ -1906,11 +2131,17 @@ so
 \mathbf{F} \cdot \mathbf{v} = ab\sin^2 t = \frac{ab}{2}\big(1 - \cos(2t)\big).
 </me>
 Since <m>\mathbf{T}\,ds = d\mathbf{r} = \mathbf{v}\,dt</m>,
-<me>
-\oint_C \mathbf{F} \cdot \mathbf{T}\, ds
-= \int_{t=0}^{t=2\pi} \frac{ab}{2}\big(1 - \cos(2t)\big)\, dt
-= \left(\frac{ab}{2}\right)(2\pi) = \pi ab .
-</me>
+<md>
+<mrow>
+\amp \oint_C \mathbf{F} \cdot \mathbf{T}\, ds
+</mrow>
+<mrow>
+\amp \quad = \int_{t=0}^{t=2\pi} \frac{ab}{2}\big(1 - \cos(2t)\big)\, dt
+</mrow>
+<mrow>
+\amp \quad = \left(\frac{ab}{2}\right)(2\pi) = \pi ab .
+</mrow>
+</md>
 The area of the ellipse is <m>\pi ab</m>; when <m>a = b = r</m> it is a
 circle, and this is the familiar <m>\pi r^2</m>.
 </p>
@@ -1924,11 +2155,14 @@ circle, and this is the familiar <m>\pi r^2</m>.
 A lamina of constant density <m>\delta</m> occupies a region <m>R</m> in
 the <m>xy</m>-plane with boundary <m>C</m>, oriented counterclockwise.
 Show that its centroid (<xref ref="def-centroid"/>) has the coordinates
-<me>
-\bar{x} = \frac{1}{2A} \oint_C x^2\, dy
-\qquad \text{and} \qquad
-\bar{y} = -\frac{1}{2A} \oint_C y^2\, dx,
-</me>
+<md>
+<mrow>
+\bar{x} \amp = \frac{1}{2A} \oint_C x^2\, dy \quad \text{and}
+</mrow>
+<mrow>
+\bar{y} \amp = -\frac{1}{2A} \oint_C y^2\, dx,
+</mrow>
+</md>
 where <m>A</m> is the area of the region bounded by <m>C</m>.
 </p>
 </statement>
@@ -1938,13 +2172,15 @@ Take <m>\mathbf{F} = \langle x^2,\ 0 \rangle</m>, so <m>M = x^2</m> and
 <m>N = 0</m>. The normal form of Green's theorem,
 <xref ref="eq-green-normal"/>, gives
 <md>
-<mrow>\oint_C \mathbf{F} \cdot \mathbf{n}\, ds
-= \oint_C M\, dy - N\, dx
-\amp= \iint_R \left( \frac{\partial M}{\partial x}
-+ \frac{\partial N}{\partial y} \right) dA,</mrow>
-<mrow>\oint_C x^2\, dy
-\amp= \iint_R 2x\, dA = \frac{2M_y}{\delta}
-\qquad \text{(I)}</mrow>
+<mrow>
+\amp \oint_C \mathbf{F} \cdot \mathbf{n}\, ds = \oint_C M\, dy - N\, dx
+</mrow>
+<mrow>
+\amp \quad = \iint_R \left( \frac{\partial M}{\partial x} + \frac{\partial N}{\partial y} \right) dA,
+</mrow>
+<mrow>
+\amp \oint_C x^2\, dy = \iint_R 2x\, dA = \frac{2M_y}{\delta} \qquad \text{(I)}
+</mrow>
 </md>
 because <m>M_y = \iint_R x\,\delta\, dA</m> by
 <xref ref="eq-first-moments-2d"/> and <m>\delta</m> is constant.
@@ -1954,13 +2190,18 @@ If <m>\mathbf{F} = \langle -y^2,\ 0 \rangle</m>, so <m>M = -y^2</m> and
 <m>N = 0</m>, the tangential form, <xref ref="eq-green-tangential"/>,
 gives
 <md>
-<mrow>\oint_C \mathbf{F} \cdot \mathbf{T}\, ds
-= \oint_C M\, dx + N\, dy
-\amp= \iint_R \left( \frac{\partial N}{\partial x}
-- \frac{\partial M}{\partial y} \right) dA,</mrow>
-<mrow>\oint_C -y^2\, dx
-\amp= \iint_R -(-2y)\, dA = \frac{2M_x}{\delta}
-\qquad \text{(II)}</mrow>
+<mrow>
+\amp \oint_C \mathbf{F} \cdot \mathbf{T}\, ds = \oint_C M\, dx + N\, dy
+</mrow>
+<mrow>
+\amp \quad = \iint_R \left( \frac{\partial N}{\partial x} - \frac{\partial M}{\partial y} \right) dA,
+</mrow>
+<mrow>
+\amp \oint_C -y^2\, dx = \iint_R -(-2y)\, dA
+</mrow>
+<mrow>
+\amp \quad = \frac{2M_x}{\delta} \qquad \text{(II)}
+</mrow>
 </md>
 since <m>M_x = \iint_R y\,\delta\, dA</m>.
 </p>
@@ -1976,11 +2217,14 @@ By <xref ref="eq-com-2d"/>, (I) and (III) give
 = \frac{1}{2A}\oint_C x^2\, dy,
 </me>
 and (II) and (III) give
-<me>
-\bar{y} = \frac{M_x}{M}
-= \frac{-\frac{\delta}{2}\oint_C y^2\, dx}{A\delta}
-= -\frac{1}{2A}\oint_C y^2\, dx.
-</me>
+<md>
+<mrow>
+\bar{y} \amp = \frac{M_x}{M} = \frac{-\frac{\delta}{2}\oint_C y^2\, dx}{A\delta}
+</mrow>
+<mrow>
+\amp = -\frac{1}{2A}\oint_C y^2\, dx.
+</mrow>
+</md>
 </p>
 </answer>
 </exercise>
