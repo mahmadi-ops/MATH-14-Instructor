@@ -45,11 +45,11 @@
                       review3-solutions review4-solutions"/> -->
     <!-- <version include="hw1-solutions review1-solutions"/> -->
     <!-- The assignment solutions are posted, and so are those of Review  -->
-    <!-- Problems #3; the other review-set solutions stay hidden.         -->
+    <!-- Problems #3 and #4; the other review-set solutions stay hidden.  -->
     <version include="hw1-solutions hw2-solutions hw3-solutions
                       hw4-solutions hw5-solutions hw6-solutions
                       hw7-solutions hw8-solutions hw9-solutions
-                      hw10-solutions review3-solutions"/>
+                      hw10-solutions review3-solutions review4-solutions"/>
   </source>
 
   <!-- Table of contents down to subsections, so the sidebar lists every
