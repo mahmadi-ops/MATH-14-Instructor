@@ -1,0 +1,30 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-hw10o-sol-three-disk-figure" speech2="The unit circle C, traversed counterclockwise, around the shaded unit disk D. A radius of length r at angle theta from the positive x-axis shows the polar coordinates in which the double integral of 3 times x squared plus y squared over D is computed, with r from 0 to 1 and theta from 0 to 2 pi.">
+      <grouped>prefigure-hw10o-sol-three-disk-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-hw10o-sol-three-disk-htd-disk</active>
+        <active>prefigure-hw10o-sol-three-disk-htd-radius</active>
+      </children>
+      <components>
+        <active>prefigure-hw10o-sol-three-disk-htd-disk</active>
+        <active>prefigure-hw10o-sol-three-disk-htd-radius</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-hw10o-sol-three-disk-htd-disk" speech2="The unit disk D bounded by C.">
+      <active>prefigure-hw10o-sol-three-disk-htd-disk</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-hw10o-sol-three-disk-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hw10o-sol-three-disk-htd-radius" speech2="A radius of length r at angle theta.">
+      <active>prefigure-hw10o-sol-three-disk-htd-radius</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-hw10o-sol-three-disk-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>
